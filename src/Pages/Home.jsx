@@ -1,11 +1,7 @@
-import Navbar from "../Components/Navbar";
-
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      Home Page
-      
-    </>
+    <div className="heading">
+      <h1>Welcome to Home Page</h1>
+    </div>
   );
 }

@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import "./Css/navbar.css";
+import { useTheme } from "../Context/ThemeContext";
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const { theme, switchTheme } = useTheme();
+
   return (
     <div className="container">
       <div className="button-container">
@@ -12,9 +14,12 @@ export default function Navbar() {
         <button onClick={() => navigate("/blog")} className="button">
           <i className="fa-solid fa-camera-retro" />
         </button>
-        <button className="button">
-          <i className="fa-solid fa-moon" />
-          {/* <i className="fa-solid fa-sun"/> */}
+        <button onClick={switchTheme} className="button">
+          {theme === "light" ? (
+            <i className="fa-solid fa-moon" />
+          ) : (
+            <i className="fa-solid fa-sun" />
+          )}
         </button>
       </div>
     </div>

@@ -1,11 +1,7 @@
-import Navbar from "../Components/Navbar";
-
 export default function Blog() {
   return (
-    <>
-      <Navbar />
-      Blog Page
-      
-    </>
+    <div className="heading">
+      <h1>Welcome to Blog Page</h1>
+    </div>
   );
 }

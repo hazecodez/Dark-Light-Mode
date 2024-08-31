@@ -1,0 +1,71 @@
+[data-theme="light"] {
+  --nav-bg-color: rgb(27, 133, 219);
+  --text-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(27, 133, 219, 0.5) 5px 10px 15px;
+  --bg-color: rgb(137, 185, 224);
+  --head-color: #000000;
+}
+
+[data-theme="dark"] {
+  --nav-bg-color: rgb(0, 7, 13);
+  --text-color: #fff;
+  --shadow-color: rgba(176, 173, 173, 0.35) 0px 5px 15px,
+    rgba(2, 11, 19, 0.5) 5px 10px 15px;
+  --bg-color: #212121;
+  --head-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--head-color);
+}
+
+.button-container {
+  display: flex;
+  background-color: var(--nav-bg-color);
+  width: 80vw;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: var(--shadow-color);
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
