@@ -53,7 +53,8 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](/public/video.webm)
+![App Screenshot](/public/light.png)
+![App Screenshot](/public/dark.png)
 
 ## Future Improvements
 
